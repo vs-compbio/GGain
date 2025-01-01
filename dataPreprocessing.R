@@ -22,7 +22,7 @@ dataFull<-reduce(listdf, bind_rows)
 dataFull<-dataFull[,-c(2,10)] # remove unnecessary columns
 
 write.csv(dataFull, "dataFullJan1.csv", row.names = FALSE) # write the datafile as csv
-j
+
 ## Explore the data .................................
 # 1. check missing values  
 # 2. distributions 
@@ -40,5 +40,5 @@ j
 # 14. estimate ggain overall
 ##### OBTAIN OR numbers of potential checks. 
 
-
+load("ggainJan1.RData")
 
