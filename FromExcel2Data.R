@@ -22,6 +22,7 @@ df_allSheets<-map(excelFilesList, function(file){
   flatten()
 
 
+
 # Check the absence of a specific column name in the data frame list created 
 sapply(df_allSheets, function(df) {
   if ("PREID" %in% names(df)) {
@@ -34,7 +35,3 @@ sapply(df_allSheets, function(df) {
 
 
 
-
-#lapply(df_allSheets, str)
-
-#big_union <- bind_rows(df_allSheets)
